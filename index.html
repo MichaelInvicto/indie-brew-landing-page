@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Indie Brew Landing Page</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <header>
+      <img src="Assets/Logo.svg" alt="logo-image">
+      <img src="Assets/Hamburger Menu.svg" class="menu-btn" alt="">
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Support</a></li>
+          <li><button type="button" onclick="location.href='sign-up.html'">Get Started <span>— It's free</span></button></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="hero-section">
+      <div class="hero-text">
+        <h1>Your weekly personal feed digest.</h1>
+        <p>With IndieBrew, get personal feeds from resources all around the web, including Reddit, HackerNews, IndieHackers,
+          and much more.
+        </p>
+        <button type="button" onclick="location.href='sign-up.html'">Get Started <span>— It's free</span></button>
+        <img src="Assets/User Avatars.svg" alt="user-avatars">
+        <p>Join <span>32,642</span> IndieBrewers in curating their personal digest.</p>
+      </div>
+      <div class="hero-image">
+        <img src="Assets/Feed Mockup.png" alt="">
+      </div>
+    </section>
+    <section class="info-section">
+      <div class="logo-section">
+        <div class="info-text">
+          <h1>Curate your feed from dozens of resources.</h1>
+          <p>We cover all major platforms where one could want to curate their feed from Reddit, ProductHunt, IndieHackers,
+            and so much more.
+          </p>
+          <a href="#">See full list of resources →</a>
+        </div>
+        <div class="social-media-icons">
+          <img src="Assets/Social Media Icons.png">
+        </div>
+      </div>
+      <div class="phone-section">
+        <div class="phone-mockup">
+          <img src="Assets/Phone Mockup.png" alt="phone mockup">
+        </div>
+        <div class="phone-section-text">
+          <h1>Access your feed from the comfort of your phone.</h1>
+          <p>With native apps for both iOS and Android, accessing your curated content has never been easier.</p>
+          <a href="#">Sign up for the waitlist →</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="description footer-links">
+        <a href="#" class="footer-header">IndieBrew</a>
+        <p>
+          With IndieBrew, get personal feeds from resources all around the web, including Reddit, HackerNews and much more.
+        </p>
+        <p>Made with 🖤 in Nigeria</p>
+      </div>
+
+      <div class="section-one">
+        <div class="sitemap footer-links">
+          <a href="#" class="footer-header">Sitemap</a>
+          <a href="#">Homepage</a>
+          <a href="#">Pricing</a>
+        </div>
+        <div class="resources footer-links">
+          <a href="#" class="footer-header">Resources</a>
+          <a href="#">Support</a>
+          <a href="#">Contact</a>
+          <a href="#">FAQ</a>
+        </div>
+
+        <div class="company footer-links">
+          <a href="#" class="footer-header">Company</a>
+          <a href="#">About</a>
+          <a href="#">Customers</a>
+          <a href="#">Blog</a>
+        </div>
+        <div class="portfolios footer-links">
+          <a href="#" class="footer-header">Portfolios</a>
+          <a href="#">HackerNews</a>
+          <a href="#">Reddit</a>
+          <a href="#">Twitter</a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      var menu_btn = document.querySelector('.menu-btn');
+      var navbar = document.querySelector('.nav-links');
+
+      navbar.style.right = "-290px";
+
+      menu_btn.onclick = function() {
+        if (navbar.style.right == "-290px") {
+          navbar.style.right = "0";
+        } else {
+          navbar.style.right = "-290px";
+        }
+      }
+    </script>
+  </body>
+</html>
